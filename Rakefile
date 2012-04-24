@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "lumberjack_multi-device"
   gem.homepage = "http://github.com/astevens/lumberjack_multi-device"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: one-line summary of your gem}
-  gem.description = %Q{TODO: longer description of your gem}
+  gem.summary = %Q{Outputs Lumberjack logs to multiple devices}
+  gem.description = %Q{A proxy device that relays logging calls to more than one other device}
   gem.email = "andy@orangesix.com"
   gem.authors = ["Andrew Stevens"]
   # dependencies defined in Gemfile

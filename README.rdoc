@@ -1,9 +1,24 @@
 = lumberjack_multi-device
 
-Description goes here.
+Real easy - setup your devices, add them to the list in MultiDevice and enjoy more than one copy of your log.
+
+== Example
+Normal way:
+  device = Lumberjack::MongoDevice.new(:db => "app", :collection => "log", :size => 1024 ** 3)
+  logger = Lumberjack::Logger.new(device)
+
+Multi-log way
+  devices = [
+    Lumberjack::MongoDevice.new(:db => "app", :collection => "log", :size => 1024 ** 3),
+    Lumberjack::SyslogDevice.new
+  ]
+
+  multi_device = LumberJack::MultiDevice(devices)
+  logger = LumberJack::Logger.new(multi_device)
+
 
 == Contributing to lumberjack_multi-device
- 
+
 * Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet.
 * Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it.
 * Fork the project.
@@ -11,9 +26,4 @@ Description goes here.
 * Commit and push until you are happy with your contribution.
 * Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
 * Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
-
-== Copyright
-
-Copyright (c) 2012 Andrew Stevens. See LICENSE.txt for
-further details.
 
