@@ -26,6 +26,7 @@ Gem::Specification.new do |s|
     "Rakefile",
     "VERSION",
     "lib/lumberjack_multi-device.rb",
+    "lumberjack_multi-device.gemspec",
     "spec/lumberjack_multi-device_spec.rb",
     "spec/spec_helper.rb"
   ]
