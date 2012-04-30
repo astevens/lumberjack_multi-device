@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "lumberjack_multi-device"
-  s.version = "0.1.0"
+  s.version = "0.2.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Andrew Stevens"]
-  s.date = "2012-04-24"
+  s.date = "2012-04-30"
   s.description = "A proxy device that relays logging calls to more than one other device"
   s.email = "andy@orangesix.com"
   s.extra_rdoc_files = [
