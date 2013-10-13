@@ -13,8 +13,8 @@ Multi-log way
     Lumberjack::SyslogDevice.new
   ]
 
-  multi_device = LumberJack::MultiDevice(devices)
-  logger = LumberJack::Logger.new(multi_device)
+  multi_device = Lumberjack::MultiDevice.new(devices)
+  logger = Lumberjack::Logger.new(multi_device)
 
 
 == Contributing to lumberjack_multi-device
